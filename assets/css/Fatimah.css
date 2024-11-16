@@ -1,0 +1,301 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: #1A202C; 
+    color: #E2E8F0; 
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1A202C; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #319795; 
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #E2E8F0; 
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #319795; 
+}
+
+section {
+    padding-top: 80px; 
+}
+
+
+/* Split-Screen Section */
+.split-screen {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    position: relative;
+    background: #1A202C; /* Dark Blue */
+    color: #E2E8F0; /* Light Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Web Pattern Design */
+.web-pattern {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(49, 151, 149, 0.4), transparent 70%),
+                repeating-linear-gradient(45deg, rgba(49, 151, 149, 0.2) 0, rgba(49, 151, 149, 0.2) 5px, transparent 5px, transparent 10px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+    animation: animateWeb 10s linear infinite;
+}
+
+/* Subtle animation for web pattern */
+@keyframes animateWeb {
+    0% {
+        transform: translate(-5%, -5%);
+    }
+    50% {
+        transform: translate(5%, 5%);
+    }
+    100% {
+        transform: translate(-5%, -5%);
+    }
+}
+
+/* Ensure text remains on top */
+.content-overlay {
+    z-index: 1;
+    text-align: center;
+}
+
+.scroll-btn {
+    border: 2px solid #319795; /* Teal */
+    color: #319795;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: #319795;
+    color: #1A202C;
+}
+
+
+
+.right-section {
+    flex: 1;
+    background: #319795; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.right-section .image-container {
+    height: 80%;
+    width: 80%;
+    background: url('https://via.placeholder.com/600') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.scroll-btn {
+    border: 2px solid #319795; 
+    color: #319795; 
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: #319795; 
+    color: #1A202C; 
+}
+
+/* About Section */
+#about {
+    background: #1A202C; 
+    padding: 50px 0;
+}
+
+#about h2 {
+    color: #319795; 
+    margin-top: 130px;
+   
+}
+
+.description {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #E2E8F0; 
+    margin-bottom: 180px;
+}
+
+/* Projects Section */
+#projects {
+    background: #319795; 
+    padding: 50px 0;
+    color: #1A202C; 
+}
+
+.project-card {
+    background: #E2E8F0; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card h5{
+    padding-top: 20px;
+}
+
+.project-card p{
+    padding-bottom: 10px;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    background: #1A202C; 
+    padding: 50px 0;
+    color: #E2E8F0; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(49, 151, 149, 0.5), transparent 70%);
+    z-index: 1;
+}
+
+.contact-section h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    color: #319795; 
+}
+
+.contact-section p {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #E2E8F0;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-section .form-control {
+    background: #2D3748; 
+    color: #E2E8F0; 
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+    background: #319795; 
+    outline: none;
+    box-shadow: 0 0 10px rgba(49, 151, 149, 0.7);
+    color: #1A202C; 
+}
+
+.contact-section button {
+    background: #319795; 
+    color: #1A202C; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section button:hover {
+    background: #2C7A7B; 
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #1A202C; 
+    color: #E2E8F0; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid #319795; 
+}
+
+footer a {
+    color: #319795; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #2C7A7B; 
+}

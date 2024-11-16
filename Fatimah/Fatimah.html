@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/Fatimah.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <a href="#" class="logo">MyPortfolio</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Split-Screen Landing -->
+    <section class="split-screen">
+        <div class="left-section d-flex align-items-center justify-content-center">
+            <div class="web-pattern"></div>
+            <div class="text-center text-white content-overlay">
+                <h1 class="name">FATIMAH ABID</h1>
+                <p class="role">Front-End Developer</p>
+                <button class="btn btn-outline-light mt-3 scroll-btn" onclick="scrollToSection('about')">Explore More</button>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <div class="image-container" style="background-image: url('../assets/images/Fatimah-img/Fatimah-image.jpg');"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="description">
+                I am a front-end developer with a strong command of HTML and CSS, allowing me to create responsive and well-structured websites. During my first internship, I developed a solid understanding of web development principles and gained hands-on experience building websites that are both functional and visually appealing. While I have basic knowledge of Bootstrap and JavaScript, I focus on using these tools to add interactivity and ensure responsiveness across devices.
+
+I am also familiar with Canva, which I use for creating simple graphics, and have a basic understanding of Figma and Adobe Illustrator for design purposes. My strengths lie in crafting clean, semantic code and ensuring the user experience is smooth and efficient. I am continuously improving my skills and exploring new technologies to keep up with the latest trends in front-end development.
+
+Passionate about web development, I aim to transform ideas into engaging web experiences while ensuring they are accessible and easy to use.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+            <h2>My Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-img" style="background-image: url('../assets/images/Fatimah-img/image.png');"></div>
+                        <h5>Project One</h5>
+                        <p>A creative portfolio website.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-img" style="background-image: url('../assets/images/Fatimah-img/image1.png');"></div>
+                        <h5>Project Two</h5>
+                        <p>An interactive Nexcent Marketing website.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <div class="project-img" style="background-image: url('../assets/images/Fatimah-img/image2.png');"></div>
+                        <h5>Project Three</h5>
+                        <p>A responsive Meow-Woof-Pet-Store.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-white">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>Get in touch for projects or collaborations!</p>
+            <form class="mt-4">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-3 text-center text-light">
+        <p>&copy; 2024 Fatimah Abid. All Rights Reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
+
